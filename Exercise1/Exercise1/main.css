@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'montserrat', 'sans-serif' ;
+    background-image: url(/testGit/WebDevCode/images/whitewall.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

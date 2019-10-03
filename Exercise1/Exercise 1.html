@@ -1,176 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Exercise1-HandyMan</title>
-    <link rel="stylesheet" href="Exercise1/main.css">
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-
-
-
+    <title>Handyman</title>
+    <link rel="stylesheet" href="/testGit/Exercise1/Exercise1Design/main.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="menuBar">
+    
+    <!-- .................Navigation....................... -->
 
-            <img src="/testGit/WebDevCode/images/logo.svg" alt="phoenixLogo" class="logo">
-
-            <div class="menuItems">
-                <a href="#" class="hide-desktop">
-                    <img src="/testGit/WebDevCode/images/ham.svg" alt="menuicon" class="hamMenu">
+    <nav class="nav">
+    
+        <div class="nav-menu flex-row">
+    
+            <div class="company-logo1">
+                <a href="#" class="white-logo">
+                    <img src="/testGit/WebDevCode/images/logo-white.svg" alt="phoenix-logo" class="logo1" width="182" height="73">
                 </a>
-
-
-                <ul class="show-desktop hide-mobile">
-
-                    <li id="exit" class="exit-button hide-desktop"><img src="/testGit/WebDevCode/images/exit.svg" alt=""
-                            class="exit menu"></li>
-                    <li><a href="" class="underline">Home</a></li>
-                    <li><a href="" class="underline">Services</a></li>
-                    <li><a href="" class="underline">Our Projects</a></li>
-                    <li><a href="" class="underline">Contact Us</a></li>
-
+            </div>
+    
+            <div>
+                <ul class="nav-item">
+                    <li class="nav-link"><a href="#">HOME</a></li>
+                    <li class="nav-link"><a href="#">SERVICES</a></li>
+                    <li class="nav-link"><a href="#">OUR PROJECTS</a></li>
+                    <li class="nav-link"><a href="#">CONACT US</a></li>
+                    <li class="nav-link"><a href="#"><img src="/testGit/WebDevCode/images/exit.svg" alt="exit-btn"
+                                class="hide-on-desktop"></a></li>
                 </ul>
             </div>
-        </header>
-
-        <div>
-            <p class="subhead">YOUR FRIENDLY NEIGHBOURHOOD</p>
-            <h1 class="landingtext">HandyMan</h1>
-
+               <a href="#" class="ham-menu hide-on-desktop"><img src="/testGit/WebDevCode/images/ham.svg" alt="menu" class="menu-btn"></a>
         </div>
+    </nav>
 
+
+
+
+    <!-- X.....................Navigation..................X -->
+
+<!-- ...............Landing Page..................... -->
+
+     <div class="container">
+         <div class="landingtext">
+             
+            <p class="herotext">YOUR FRIENDLY NEIGHBOURHOOD</p>
+                
+         </div>
+
+         <div class="bigtext">
+             
+            <h1>HandyMan</h1>
+
+         </div>
     </div>
 
-    <div class="services">    
-        <div class="container">
+<!-- .............First Strip.................... -->
+   
+    <div class="strip1">
 
-            <h2>Our Services</h2>
-
-            <ul>
-                <li>
-                    <img src="/testGit/WebDevCode/images/electrician.svg" alt="electrician">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quidem provident totam accusamus
-                        quibusdam assumenda
-                        exercitationem dolores excepturi consequuntur illum saepe ipsa aperiam, maxime impedit a vero
-                        repudiandae! Qui,
-                        harum.</p>
-                </li>
-                <li>
-                    <img src="/testGit/WebDevCode/images/painter.svg" alt="painter">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quaerat qui magni ab, ipsa
-                        alias suscipit,
-                        distinctio quibusdam eos unde eius tempore. Culpa ducimus error ex nesciunt veniam iste alias.
-                    </p>
-                </li>
-                <li>
-                    <img src="/testGit/WebDevCode/images/plumber.svg" alt="plumber">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quaerat qui magni ab, ipsa
-                        alias suscipit,
-                        distinctio quibusdam eos unde eius tempore. Culpa ducimus error ex nesciunt veniam iste alias.
-                    </p>
-                </li>
-                <li>
-                    <img src="/testGit/WebDevCode/images/builder.svg" alt="builder">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quaerat qui magni ab, ipsa
-                        alias suscipit,
-                        distinctio quibusdam eos unde eius tempore. Culpa ducimus error ex nesciunt veniam iste alias.
-                    </p>
-                </li>
-
-            </ul>
-
-
+        <div class="strip1-heading">
+            <h1>SERVICES</h1>
         </div>
-    </div>
 
 
-    <div class="testimonials">
+<!-- CARD-1 -->
+
+        <div class="card1">
+            <div class="card1-image">
+                <img src="/testGit/WebDevCode/images/electrician.jpg" alt="" class="electrician">
+            </div>
+            <div class="card1-text">
+                <h2>ELECTRICIAN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="contact-btn1">
+                <a href="#" class="btn1">CONTACT ME</a>
+    
+            </div>
+        </div>
+    
+<!-- CARD-2 -->
+
+        <div class="card2">
+            <div class="card2-image">
+                <img src="/testGit/WebDevCode/images/painter.jpg" alt="painter-pic" class="painter">
+            </div>
+            <div class="card2-text">
+                <h2>PAINTER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="contact-btn2">
+                    <a href="#" class="btn2">CONTACT ME</a>
         
-        <div class="container">
-            
-            <h3>TESTIMONIALS</h3>
-            
-            <ul>
-                <li>
-                    <figure>
-                        <img src="/testGit/WebDevCode/images/user1.png" alt="review1" class="user1">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur saepe odit
-                            porro eveniet dolor fugit necessitatibus eius incidunt! Ipsam architecto, dolorem laboriosam
-                            obcaecati eos quidem officiis officia amet nihil.</blockquote>
-                        <figcaption>john Doe</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="/testGit/WebDevCode/images/user1.png" alt="review1" class="user1">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur saepe odit
-                            porro eveniet dolor
-                            fugit necessitatibus eius incidunt! Ipsam architecto, dolorem laboriosam obcaecati eos
-                            quidem officiis officia
-                            amet nihil.</blockquote>
-                        <figcaption>john Doe</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="/testGit/WebDevCode/images/user2.png" alt="review1" class="user1">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur saepe odit
-                            porro eveniet dolor fugit necessitatibus eius incidunt! Ipsam architecto, dolorem laboriosam
-                            obcaecati eos quidem officiis officia amet nihil.</blockquote>
-                        <figcaption>john Doe</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="/testGit/WebDevCode/images/user2.png" alt="review1" class="user1">
-                        <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est pariatur saepe odit
-                            porro eveniet dolor fugit necessitatibus eius incidunt! Ipsam architecto, dolorem laboriosam
-                            obcaecati eos quidem officiis officia amet nihil.</blockquote>
-                        <figcaption>john Doe</figcaption>
-                    </figure>
-                </li>
-            </ul>
+                </div>
+        </div>
+
+<!-- CARD-3 -->
+
+        <div class="card3">
+            <div class="card3-image">
+                <img src="/testGit/WebDevCode/images/plumber.jpg" alt="plumber-pic" class="plumber">
+            </div>
+            <div class="card3-text">
+                <h2>PLUMBER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="contact-btn3">
+                    <a href="#" class="btn3">CONTACT ME</a>
+        
+                </div>
+        </div>
+
+<!-- CARD-4 -->
+
+        <div class="card4">
+            <div class="card4-image">
+                <img src="/testGit/WebDevCode/images/builder.jpg" alt="builder-pic" class="builder">
+            </div>
+            <div class="card4-text">
+                <h2>BUILDER</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="contact-btn3">
+                    <a href="#" class="btn3">CONTACT ME</a>
+        
+                </div>
         </div>
     </div>
 
+
+
+
+    <!-- ..........X.......First Strip............X.... -->
     
 
-<footer class="f-container">
-    <div class="container">
-        <ul class="address-detail">
-            <li>
-                <img src="/testGit/WebDevCode/images/address.svg" alt="add-logo">
-                <p class="address">26 melrose road, 90125 <br>New York USA</p>
-            </li>
-            <li>
-                    <img src="/testGit/WebDevCode/images/phone.svg" alt="add-logo">
-                    <p class="phone">+1555 123456 <br>New York USA</p>
-            </li>
-            <li>
-                    <img src="/testGit/WebDevCode/images/email.svg" alt="add-logo">
-                    <p class="email"><a href="#" class="email-link">support@company.com</a></p>
-            </li>
-        </ul>
-
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
 
 
-
-        <ul class="legals">
-            <li><a href="#">Terms of Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-        </ul>
-
+    <!-- .............Second Strip.................... -->
+    
+    <div class="strip2">
+    
+        <div class="strip2-heading">
+            <h1>REVIEWS</h1>
+        </div>
+    
+    
+        <!-- USER CARD-1 -->
+    
+        <div class="user1-card">
+            <div class="user1-image">
+                <img src="/testGit/WebDevCode/images/adult-man.jpg" alt="" class="user1-pic">
+            </div>
+            <div class="user1-text">
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="user1-name">
+                <h3 class="user1">Jack Rey</h3>
+    
+            </div>
+        </div>
+    
+        <!-- USER CARD-2 -->
+    
+        <div class="user2-card">
+            <div class="user2-image">
+                <img src="/testGit/WebDevCode/images/woman.jpg" alt="" class="user2-pic">
+            </div>
+            <div class="user2-text">
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="user2-name">
+                <h3 class="user2">Aan Smith</h3>
+    
+            </div>
+        </div>
+    
+        <!-- USER CARD-3 -->
+    
+        <div class="user3-card">
+            <div class="user3-image">
+                <img src="/testGit/WebDevCode/images/adult-man2.jpg" alt="" class="user3-pic">
+            </div>
+            <div class="user3-text">
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="user3-name">
+                <h3 class="user3">James May</h3>
+    
+            </div>
+        </div>
+        <!-- USER CARD-4 -->
+    
+        <div class="user4-card">
+            <div class="user4-image">
+                <img src="/testGit/WebDevCode/images/girlimage.jpg" alt="" class="user4-pic">
+            </div>
+            <div class="user4-text">
+    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur repellat quam mollitia
+                    recusandae in earum sit cum inventore ratione ut, eligendi necessitatibus alias corrupti? Repellendus
+                    perferendis cumque reprehenderit dolores!</p>
+            </div>
+            <div class="user4-name">
+                <h3 class="user4">Jane Doe</h3>
+    
+            </div>
+        </div>
     </div>
-</footer>
+<!-- .................Second Strip............X.... -->
+
+<!-- .............Third Strip.................... -->
+   
+    <div class="strip3">
+
+    
+    
+    
+    
+    
+    
+    
+    </div>
+<!-- .................Third Strip............X.... -->
+
+<!-- .............Footer Strip.................... -->
+   
+    <footer class="footer">
+
+    
+    
+    
+    
+    
+    
+    
+    </footer>
+<!-- .................Third Strip............X.... -->
 
 
 </body>

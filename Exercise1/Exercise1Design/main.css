@@ -37,7 +37,14 @@ ul{
 }
 
 
+h4{
 
+ 
+  color: white;
+  font-weight: 400;
+  font-size: 0.8rem;
+ 
+}
 
 /*...........Nav Menu...........*/
 
@@ -97,7 +104,22 @@ ul{
                  -10px 20px 5px rgba(0,0,0,0.05);
 
 }
+.nav-link::after {
 
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(49, 105, 125);
+  transition: ease-in-out;
+
+
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+ }
 .hide-on-desktop{
 
     display: none;
@@ -164,7 +186,7 @@ p.herotext{
     width: 100%;
     height: auto;
     background-color: rgb(169, 169, 169);
-    position: absolute;
+    
     margin-top: 37%;
     padding: 2em 0 2em 0;
     display: flex;
@@ -196,7 +218,8 @@ p.herotext{
    justify-content: center;
     
    background: white;
-   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+   transition: 300ms;
+   
 
 }
 
@@ -284,7 +307,26 @@ p.herotext{
     font-size: 1.1em;
     color: black;
   }
-  
+  .card1:hover {
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+  }
+  .card2:hover {
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+  }
+  .card3:hover {
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+  }
+  .card4:hover {
+
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transform: scale(1.05);
+  }
 
  /*************************************CARD 1,2,3,4******X***************/
 
@@ -297,7 +339,6 @@ p.herotext{
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    position: absolute;
     margin-top: 0%;
     padding: 2em 0 2em 0;
     display: flex;
@@ -352,19 +393,22 @@ p.herotext{
     filter: blur(0px);
     transition: 500ms;
     transform: translateY(100px);
+    box-shadow: 3px -3px 10px rgba(0,0,0,0.5);
     z-index: 2;
 
 }
 .user1-text, .user2-text, .user3-text, .user4-text{
 
     grid-area: comment;
-    margin-top: 0 2% 0 2%;
-    padding: 8% 0 0;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.9);
+    width: 100%;
+    margin: 0;
+    padding: 14% 0;
+    
     
     transition: 500ms;
     transform: translateY(-60px);
     z-index: 1;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
  }
 
 .user1, .user2, .user3, .user4 {
@@ -386,11 +430,16 @@ p.herotext{
 
     filter: blur(0);
     transform: translateY(0);
+    transform: scale(1.05);
+    
   } 
   .user1-card:hover .user1-text{
     
     
     transform: translateY(0);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    
   } 
   .user1-card:hover .user1{
 
@@ -404,11 +453,14 @@ p.herotext{
     
     filter: blur(0);
     transform: translateY(0);
+    transform: scale(1.05);
   } 
   .user2-card:hover .user2-text{
     
     filter: blur(0);
     transform: translateY(0);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
   } 
   .user2-card:hover .user2{
     
@@ -423,10 +475,13 @@ p.herotext{
     
     filter: blur(0);
     transform: translateY(0);
+    transform: scale(1.05);
   } 
   .user3-card:hover .user3-text{
 
     transform: translateY(0);
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
   } 
   .user3-card:hover .user3{
 
@@ -440,10 +495,12 @@ p.herotext{
     
     filter: blur(0);
     transform: translateY(0);
+    transform: scale(1.05);
   } 
   .user4-card:hover .user4-text{
 
     transform: translateY(0);
+    transform: scale(1.05);
   } 
   .user4-card:hover .user4{
 
@@ -451,3 +508,175 @@ p.herotext{
   } 
 
   /*XXXXXXXXXXXXXXXuser4 card hoverXXXXXXXXXX*/
+
+
+
+  /********************Footer**************************/
+
+
+  .footer{
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: rgb(43, 43, 45);
+    margin-top: 20%;
+    padding: 2em 0 2em 0;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    
+ 
+ }
+
+
+ .footer-logo{
+
+  max-width: 100%;
+  height: auto;
+  margin-top: 2.5%;
+  padding-left:5rem;
+ }
+
+
+.contact-details{
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "address" "phone" "email";
+
+}
+
+
+.address{
+
+  grid-area: address;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 7.1em 0;
+}
+.phone{
+
+  grid-area: phone;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 7.1em 0;
+
+
+}
+
+
+
+
+.email{
+
+  grid-area: email;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 7em 0;
+
+}
+
+.address h4{
+
+  padding-right: 2%;
+}
+
+.phone h4{
+  padding-right: 20%;
+  
+  
+}
+
+.legals{
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "social" "terms" "privacy";
+  margin-right: 7%;
+  padding-left: 10.5%
+
+}
+
+
+
+
+
+
+
+
+.socials{
+
+  grid-area: social;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+
+.twitter , .facebook , .youtube , .github {
+
+  height: 40px;
+  width: 40px;
+  
+  margin-right: 0.8em;
+  background-color:rgb(43, 43, 45);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.9);
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 2em;
+  transition: 300ms;
+
+}
+
+.facebook:hover {
+
+  background-color:#3b5999;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  border-radius: 19px;
+  transform: scale(1.2);
+
+}
+.twitter:hover {
+
+  background-color:#55acee;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  border-radius: 19px;
+  transform: scale(1.2);
+}
+.youtube:hover {
+
+  background-color:#cd201f;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  border-radius: 19px;
+  transform: scale(1.2);
+}
+.github:hover {
+
+  background-color:#6e5494;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  border-radius: 19px;
+  transform: scale(1.2);
+}
+
+
+
+
+.terms{
+
+  grid-area: terms;
+  text-decoration: none;
+  padding-top: 0.5%;
+}
+
+.privacy{
+
+  grid-area: privacy;
+  padding-top: 0.5%;
+}

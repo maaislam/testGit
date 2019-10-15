@@ -7,7 +7,7 @@ html, body{
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/testGit/WebDevCode/images/handyman2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/Exercise1Design/images/handyman2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -144,11 +144,11 @@ h4{
 p.herotext{
 
    position: absolute;
-   font-size: 1vw;
-   padding-top: 26%;
+   font-size: 0.9vw;
+   padding-top: 25%;
    padding-bottom: 0%;
-   padding-left: 9.5%;
-   font-weight: 600;
+   padding-left: 9%;
+   font-weight: 550;
    color: rgb(255, 255, 255);
    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
                  10px 20px 5px rgba(0,0,0,0.05),
@@ -166,7 +166,7 @@ p.herotext{
    padding-top: 2%;
    padding-bottom: 0%;
    padding-left: 9%;
-   font-size: 5vw;
+   font-size: 4vw;
    font-weight: bolder;
    color: rgb(255, 255, 255);
    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
@@ -193,6 +193,8 @@ p.herotext{
     flex-wrap: wrap;
     justify-content: flex-end;
     position: relative;
+   
+    
 }
 
 .strip1-heading{
@@ -346,6 +348,7 @@ p.herotext{
     justify-content: flex-end;
     position: relative;
     z-index: 1;
+    
 }
 
 
@@ -511,7 +514,7 @@ p.herotext{
 
 
 
-  /********************Footer**************************/
+  /********************Footer using CSS Grid**************************/
 
 
   .footer{
@@ -533,7 +536,7 @@ p.herotext{
 
   max-width: 100%;
   height: auto;
-  margin-top: 2.5%;
+  margin-top: 20.5%;
   padding-left:5rem;
  }
 
@@ -555,7 +558,29 @@ p.herotext{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 7.1em 0;
+  color: white;
 }
+  
+
+#addressicon{
+
+  margin-top: 5%;
+  font-size: 1.6em;
+}
+#phoneicon{
+
+  margin-top: 2.5%;
+  font-size: 1.6em;
+}
+#emailicon{
+
+  margin-top: 3.6%;
+  font-size: 1.6em;
+}
+
+
+  
+
 .phone{
 
   grid-area: phone;
@@ -563,7 +588,7 @@ p.herotext{
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0 7.1em 0;
-
+  margin-top: 1.5%;
 
 }
 
@@ -583,6 +608,7 @@ p.herotext{
 .address h4{
 
   padding-right: 2%;
+  
 }
 
 .phone h4{
@@ -595,18 +621,19 @@ p.herotext{
 
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
   grid-template-areas: "social" "terms" "privacy";
   margin-right: 7%;
-  padding-left: 10.5%
+  padding-left: 10.5%;
+ 
 
 }
 
+/*********************End of footer structure*********************************/
 
 
 
-
-
+/************Social Buttons on footer*******************/
 
 
 .socials{
@@ -615,6 +642,8 @@ p.herotext{
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+ 
+  margin-top: 3%;
 
 }
 
@@ -623,17 +652,21 @@ p.herotext{
 
   height: 40px;
   width: 40px;
-  
+  color: white; 
   margin-right: 0.8em;
   background-color:rgb(43, 43, 45);
   box-shadow: 0px 0px 3px rgba(0,0,0,0.9);
-  color: #fff;
   font-size: 1.2em;
   text-align: center;
   line-height: 2em;
   transition: 300ms;
-
 }
+
+
+
+/***************************Hover-Effect***********************/
+
+
 
 .facebook:hover {
 
@@ -643,6 +676,7 @@ p.herotext{
   transform: scale(1.2);
 
 }
+
 .twitter:hover {
 
   background-color:#55acee;
@@ -650,6 +684,7 @@ p.herotext{
   border-radius: 19px;
   transform: scale(1.2);
 }
+
 .youtube:hover {
 
   background-color:#cd201f;
@@ -657,6 +692,7 @@ p.herotext{
   border-radius: 19px;
   transform: scale(1.2);
 }
+
 .github:hover {
 
   background-color:#6e5494;
@@ -666,17 +702,18 @@ p.herotext{
 }
 
 
+/*XXXXXXXXXXXXXXXXXX--Social Buttons---ENDXXXXXXXXXXXXXXXXXXXXXX*/
 
-
+/*******************Legal stuffs******************/
 .terms{
 
   grid-area: terms;
-  text-decoration: none;
-  padding-top: 0.5%;
+ 
+  margin-top: 4%;
 }
 
 .privacy{
 
   grid-area: privacy;
-  padding-top: 0.5%;
+  margin-top: 1%;
 }
